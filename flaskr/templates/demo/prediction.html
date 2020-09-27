@@ -7,7 +7,7 @@
 {% block content %}
 <form method="post">
       <label for="locationFormSelect">Select Location</label>
-      <select class="form-control" id="locationFormSelect">
+      <select class="form-control" id="locationFormSelect" name="locationFormSelect">
         <option>Stockholm</option>
         <option>Lulea</option>
         <option>Goetheborg</option>
@@ -19,7 +19,10 @@
 <div class="image_container_no_opacity">
     <img src={{ img_path }} class="image">
     <div class="overlay">
-        <div class="text_solution_images" style="font-size:15px;">While prevention and counteracting are important, we also enable technology to turn the problem into value. We build technology for turning algal waste into biofuel, thus eliminate the problem and work towards sustainability at the same time.</div>
+        <div class="text_solution_images" style="font-size:15px;">Meta data</div>
     </div>
 </div>
+<script>
+    window.location.hash = "#demo";
+</script>
 {% endblock %}

@@ -31,10 +31,9 @@ def index():
         location = request.form.get('locationFormSelect')
         print(location)
         if location is not None:
-            path_to_img_predicted = 'img/algal_waste.png'
-            img_path = url_for('static', filename=path_to_img_predicted)
-            return render_template('demo/prediction.html', img_path=img_path)
+            if location == "Lulea":
+                path_to_img_predicted = 'img/sat_img.png'
+                img_path = url_for('static', filename=path_to_img_predicted)
+                return render_template('demo/prediction.html', img_path=img_path)
 
-    path_to_img_predicted = 'img/sat_img.png'
-    img_path = url_for('static', filename=path_to_img_predicted)
-    return render_template('demo/index.html', img_path=img_path)
+    return render_template('demo/index.html')
