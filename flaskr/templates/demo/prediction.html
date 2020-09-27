@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{% block title %}Prediction{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<form method="post">
+      <label for="locationFormSelect">Select Location</label>
+      <select class="form-control" id="locationFormSelect">
+        <option>Stockholm</option>
+        <option>Lulea</option>
+        <option>Goetheborg</option>
+      </select>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+<br>
+<br>
+<div class="image_container_no_opacity">
+    <img src={{ img_path }} class="image">
+    <div class="overlay">
+        <div class="text_solution_images" style="font-size:15px;">While prevention and counteracting are important, we also enable technology to turn the problem into value. We build technology for turning algal waste into biofuel, thus eliminate the problem and work towards sustainability at the same time.</div>
+    </div>
+</div>
+{% endblock %}

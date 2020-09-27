@@ -1,0 +1,225 @@
+<!doctype html>
+<title>Hydropatrol - {% block title %}{% endblock %}</title>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/dist/css/bootstrap.min.css') }}">
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/scrolling-nav.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap-select/dist/css/bootstrap-select.min.css') }}">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#problem">Problem</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#solution">Solution</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#demo">Demo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <header class="bg-primary text-white">
+      <div class="container text-center">
+        <h1>Hydropatrol</h1>
+        <p class="lead">Earn money while fighting algal bloom</p>
+      </div>
+    </header>
+  
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>About Hydropatrol</h2>
+            <p class="lead">Hydropatrol is a platform enabling monitoring and prediction of algal bloom. Our mission is to fight a global problem towards safe and sustainable future. <b>We use space data to save lifes.</b></p>
+            <img src="{{url_for('static', filename='img/hydropatrol-logo.png')}}" align="middle" />
+            <!-- <ul>
+                <li>Global monitoring of algal bloom</li>
+                <li>Warning notifications</li>
+                <li>Predictive monitoring</li>
+                <li>Data sharing across many systems</li>
+                <li>Creating value from algal waste</li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="problem" class="bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2>The Problem</h2>
+              <p class="lead">Harmful Algal Bloom is a rapid increase of algae population in freshwater or marine water systems. It is a global problem which costs millions USD annualy. It leads to dramatic consequences, such as: 
+                <ul>
+                    <li>Increased risk of cancer or liver failure which can threaten human life</li>
+                    <li>Death of animals due to intoxicated water</li>
+                    <li>Drinking water shortage</li>
+                    <li>Economical loss for fishing industry</li>
+                    <li>Decrease of value for lakeside properties</li>
+                    <li>Forbidden swimming/boating</li>
+                    <li>Millions USD spent annualy for algal bloom prevention and treatment</li>
+                </ul>
+            </p>
+            <div class="image_container">
+                <img src="{{url_for('static', filename='img/dead_elephants.png')}}" alt="dead_elephants.png" class="image">
+                <div class="overlay">
+                  <div class="text_images">350 elephants dead due to toxins in watering holes in Botswana (2020)</div>
+                </div>
+            </div>
+            <div class="image_container">
+                <img src="{{url_for('static', filename='img/no_water.png')}}" alt="no_water.png" class="image">
+                <div class="overlay">
+                  <div class="text_images">500'000 people with 'NO WATER' supply for 3 days in Toledo, USA (2014)</div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    <section id="solution">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Our Solution</h2>
+            <p class="lead">Algal bloom is a complex global problem. Global problems are not solvable by singular players. Global problems are not solvable by acting locally. Our platform ensures we get to the cost-effective algal bloom solution by:</p>
+            <div class="image_container_no_opacity">
+                <img src="{{url_for('static', filename='img/multi_actor_colab.png')}}" alt="multi_actor_colab.png" class="image">
+                <div class="overlay">
+                  <div class="text_solution_images" style="font-size:15px;">Our platform enables <b>mutual collaboration</b> and <b>data sharing</b> among all actors in the system, including: space data providers, research institutions, government organizations, fisching associations, touristic resorts, education facilities and many more.</div>
+                </div>
+            </div>
+            <div class="image_container_no_opacity">
+                <img src="{{url_for('static', filename='img/space_data.png')}}" alt="space_data.png" class="image">
+                <div class="overlay">
+                  <div class="text_solution_images" style="font-size:15px;">Our Machine Learning model uses and online monitoring water, sending you warnings and preventing costs.</div>
+                </div>
+            </div>
+            <div class="image_container_no_opacity">
+                <img src="{{url_for('static', filename='img/in_situ_measurements.png')}}" alt="in_situ_measurements.png" class="image">
+                <div class="overlay">
+                  <div class="text_solution_images" style="font-size:15px;">We use custom-built IoT devices for getting in-situ measurements without cost and time waste. This ensures our database is continually enlarged and the model improves.</div>
+                </div>
+            </div>
+            <div class="image_container_no_opacity">
+                <img src="{{url_for('static', filename='img/predicting.png')}}" alt="predicting.png" class="image">
+                <div class="overlay">
+                  <div class="text_solution_images" style="font-size:15px;">Thanks to extensive multi-actor collaboration, we build a global database of in-situ measurements. We add the domain expertise of our research parners as well as the Copernicus space data. This enables us to create a non-local predictive model which achieves high results despite the complexity of the problem.</div>
+                </div>
+            </div>
+            <div class="image_container_no_opacity">
+                <img src="{{url_for('static', filename='img/algal_waste.png')}}" alt="algal_waste.png" class="image">
+                <div class="overlay">
+                  <div class="text_solution_images" style="font-size:15px;">While prevention and counteracting are important, we also enable technology to turn the problem into value. We build technology for turning algal waste into biofuel, thus eliminate the problem and work towards sustainability at the same time.</div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="demo" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Demo</h2>
+            <p class="lead">Want to see our working solution? Select location and see how our monitoring performs in practise!</p>
+            <!-- <ul>
+                {% if g.user %}
+                <li><span>{{ g.user['username'] }}</span>
+                <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
+                {% else %}
+                <li><a href="{{ url_for('auth.register') }}">Register</a>
+                <li><a href="{{ url_for('auth.login') }}">Log In</a>
+                {% endif %}
+            </ul> -->
+            <!-- <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Select location
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div> -->
+            <!-- <form>
+                <div class="form-group">
+                  <label for="locationForm">Select Location</label>
+                  <select class="form-control" id="locationFormSelect">
+                    <option>Stockholm</option>
+                    <option>Lulea</option>
+                    <option>Goetheborg</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form> -->
+            {% for message in get_flashed_messages() %}
+                <div class="flash">{{ message }}</div>
+            {% endfor %}
+            {% block content %}{% endblock %}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2>Contact us</h2>
+              <p class="lead">info@hydropatrol.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Hydropatrol 2020</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+  
+    <!-- Bootstrap core JavaScript -->
+    <link href="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}">
+    <link href="{{ url_for('static', filename='vendor/jquery.easing/jquery.easing.min.js') }}">
+    <!-- <link href="{{ url_for('static', filename='js/popper.js') }}"> -->
+    <link href="{{ url_for('static', filename='vendor/bootstrap/dist/js/bootstrap.bundle.js') }}"> 
+    <link href="{{ url_for('static', filename='vendor/bootstrap/dist/js/bootstrap.min.js') }}"> 
+    <!-- Latest compiled and minified JavaScript -->
+    <link href="{{ url_for('static', filename='vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"> 
+    <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+    <link href="{{ url_for('static', filename='vendor/bootstrap-select/dist/js/i18n/defaults-*.min.js') }}"> 
+    <!-- Custom JavaScript for this theme -->
+    <link href="{{ url_for('static', filename='js/scrolling-nav.js') }}">
+  
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+  </html>

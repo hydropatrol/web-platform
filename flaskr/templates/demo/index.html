@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>{% block title %}Demo{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<form method="post">
+      <label for="locationFormSelect">Select Location</label>
+      <select class="form-control" id="locationFormSelect" name="locationFormSelect">
+        <option>Stockholm</option>
+        <option>Lulea</option>
+        <option>Goetheborg</option>
+      </select>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+{% endblock %}

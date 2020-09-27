@@ -27,7 +27,15 @@ def create_app(test_config=None):
     # a simple page that says hello
     @app.route('/hello')
     def hello():
-        return 'Hello, World!'
+        # return 'Hello, World!'
+        render_template('auth/register.html')
+    
+    from . import auth
+    app.register_blueprint(auth.bp)
+
+    from . import demo
+    app.register_blueprint(demo.bp)
+    app.add_url_rule('/', endpoint='index')
 
     # Import database and initialize the database file
     from . import db
