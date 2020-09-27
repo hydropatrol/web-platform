@@ -154,27 +154,6 @@
                 <li><a href="{{ url_for('auth.login') }}">Log In</a>
                 {% endif %}
             </ul> -->
-            <!-- <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Select location
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </div> -->
-            <!-- <form>
-                <div class="form-group">
-                  <label for="locationForm">Select Location</label>
-                  <select class="form-control" id="locationFormSelect">
-                    <option>Stockholm</option>
-                    <option>Lulea</option>
-                    <option>Goetheborg</option>
-                  </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Search</button>
-            </form> -->
             {% for message in get_flashed_messages() %}
                 <div class="flash">{{ message }}</div>
             {% endfor %}

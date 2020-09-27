@@ -6,13 +6,13 @@
 
 {% block content %}
 <form method="post">
-      <label for="locationFormSelect">Select Location</label>
-      <select class="form-control" id="locationFormSelect" name="locationFormSelect">
-        <option>Stockholm</option>
-        <option>Lulea</option>
-        <option>Goetheborg</option>
-      </select>
-    <button type="submit" class="btn btn-primary">Search</button>
+    <select class="form-control" id="locationFormSelect" name="locationFormSelect">
+      <option value="" selected default hidden>Select Location</option>
+      <option value="Stockholm">Stockholm</option>
+      <option value="Lulea">Lulea</option>
+      <option value="Goetheborg">Goetheborg</option>
+    </select>
+  <button type="submit" class="btn btn-primary">Search</button>
 </form>
 <br>
 <br>
