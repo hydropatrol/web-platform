@@ -1,7 +1,7 @@
 click==7.1.2
 Flask==1.1.2
--e git+https://github.com/hydropatrol/web-platform.git@8fb638cfa273574610c1852333a26def92647836#egg=flaskr
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
+waitress==1.4.4
 Werkzeug==1.0.1
