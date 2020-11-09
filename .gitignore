@@ -39,7 +39,7 @@ Thumbs.db
 # Ignore folders
 venv/
 node_modules
-static
+# static
 
 # Ignore file named README.txt
 README.txt
