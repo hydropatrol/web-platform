@@ -18,6 +18,7 @@ flaskr/static/css/style.css
 flaskr/static/img/.DS_Store
 flaskr/static/img/algal_waste.png
 flaskr/static/img/dead_elephants.png
+flaskr/static/img/hydropatro-logo-2.png
 flaskr/static/img/hydropatrol-logo.png
 flaskr/static/img/in_situ_measurements.png
 flaskr/static/img/multi_actor_colab.png
